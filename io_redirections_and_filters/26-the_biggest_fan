@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f 1 "$1" | sort | uniq -c | sort -nr | head -n 11 | while read count ip; do printf "%s %s\n" "$ip" "$count"; done
+cut -f 1 logfile.tsv | sort | uniq -c | sort -nr | head -n 11 | xargs -n2 printf "%s %s\n"
