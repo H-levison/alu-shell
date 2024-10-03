@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f 1 logfile.tsv | sort | uniq -c | sort -nr | head -n 11 | xargs -n2 printf "%s %s\n"
+cut -f 1 logfile.tsv | sort | uniq -c | sort -nr | head -n 11 | tr -s ' ' | cut -d ' ' -f2- | paste -d' ' - -
