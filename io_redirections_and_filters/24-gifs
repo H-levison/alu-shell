@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name "*.gif" -o -name ".*.gif" \) -exec du -b {} + | sort -n | cut -f2 | rev | cut -c 5- | rev | tr '\n' '\0' | xargs -0 -n1 echo
+find . -type f \( -name "*.gif" -o -name ".*.gif" \) -exec bash -c 'for file; do echo "${file%.*}"; done' _ {} +
