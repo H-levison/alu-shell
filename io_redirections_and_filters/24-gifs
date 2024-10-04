@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name "*.gif" -o -name ".*.gif" \) -exec bash -c 'for file; do echo "${file%.*}"; done' _ {} +
+find . -type f \( -name "*.gif" -o -name ".*.gif" \) -exec sh -c 'printf "%s\n" "${1%.*}"' _ {} +
