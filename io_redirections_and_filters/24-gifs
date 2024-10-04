@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name "*.gif" -o -name ".*.gif" \) -exec du -b {} + | sort -n | cut -f2 | tr '[:upper:]' '[:lower:]' | rev | cut -c 5- | rev
+find . -type f \( -name "*.gif" -o -name ".*.gif" \) -exec du -b {} + | sort -n | cut -f2 | tr '[:upper:]' '[:lower:]' | rev | cut -c 5- | rev | tr '/' '\n'
