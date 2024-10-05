@@ -1,2 +1,2 @@
 #!/bin/bash
-cat | paste -d'\n' | cut -f3
+head -n -1 | tr '\n' '\0' | cut -b 1-2 | tr '\0' '\n' | head -n -1
