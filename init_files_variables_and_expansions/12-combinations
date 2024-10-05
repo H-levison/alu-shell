@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" {a..z} | paste -d '' - {a..z}
+echo {a..n}{o..z} | tr ' ' '\n'
