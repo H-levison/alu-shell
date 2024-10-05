@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f1 | sort | uniq -u | sort -nr | head -n 11
+cut -f1 | sort | uniq -d  | sort -nr | head -n 11
