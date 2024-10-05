@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s\n' {a..z}{a..z} | head -n -1 | tr '\n' '\0' | cut -b 3-4 | tr '\0' '\n' | head -n -1 | tr 'oo' '\n' | head -n -1
+echo {a..n}{a..z} {o..z}{a..n} {o..z}{p..z} | tr ' ' '\n'
