@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n | cut -b1 | paste -sd "" -
+head -n 20 | cut -b1 | paste -sd "" -
