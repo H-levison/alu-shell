@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=bestchol; ibase=water; $WATER + ibase=stir; $STIR"
+echo "$(convert_base "$WATER" "water" "decimal") + $(convert_base "$STIR" "stir" "decimal")" | convert_base "decimal" "bestchol"
