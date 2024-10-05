@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..m}{a..z} {n..z}{a..n} {n..z}{p..z} | tr ' ' '\n'
+echo {a..z}{a..z} | tr ' ' '\n' | tr -d '\n' | tr -d 'oo' | fold -w2
