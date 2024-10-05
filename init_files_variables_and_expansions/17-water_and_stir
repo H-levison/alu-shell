@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo -n $WATER | fold -w1 | paste -d '' - <(echo -n $STIR | fold -w1) | tr -d '\n' | tr 'waterstir' 'shtbeolhc')
+echo $(echo -n $WATER$STIR | tr 'ewwatratewati.itirtrtr' 'shtbeolhc')
