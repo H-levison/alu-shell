@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | nl | paste - - | cut -f 1 | tr -d '[:digit:][:space:]'
+ls | nl | paste -d"/n" - - | cut -f 1 | tr -d '[:digit:][:space:]'
