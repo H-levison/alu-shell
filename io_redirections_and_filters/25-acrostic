@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n 9 | tr -d '\n' | cut -c1-9 
+head -n 9 | cut -c1 | tr -d '\n'
