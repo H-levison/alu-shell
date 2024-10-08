@@ -6,21 +6,17 @@ hour=0
 
 # Loop through hours from 0 to 12
 while [ "$hour" -le 12 ]; do
+  # Display the hour at the start of each hour
+  echo "$hour"
+
   minute=1  # Reset minute for each hour
-  
+
   # Loop through minutes from 1 to 59
   while [ "$minute" -lt 60 ]; do
-    seconds=0  # Initialize seconds
-
-    # Loop through seconds from 0 to 59
-    while [ "$seconds" -lt 60 ]; do
-      # Display the current hour and seconds in HH:MM:SS format
-      echo "$hour:$minute:$seconds"
-      seconds=$((seconds + 1))  # Increment seconds
-    done
-
+    # Display the current minute
+    echo "$minute"
     minute=$((minute + 1))  # Increment minute
   done
-  
+
   hour=$((hour + 1))  # Increment hour
 done
