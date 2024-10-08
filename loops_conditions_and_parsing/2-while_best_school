@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+# Initialize the counter
+count=1
+
+# Loop while the counter is less than or equal to 10
+while [ "$count" -le 10 ]; do
+  echo "Best School"
+  count=$((count + 1))
+done
