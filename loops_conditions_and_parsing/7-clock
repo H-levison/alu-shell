@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# display hours from 0 to 12, display minutes from 1 to 59
+
+# Initialize hour and minute
+hour=0
+
+# Loop through hours from 0 to 12
+while [ "$hour" -le 12 ]; do
+  minute=1  # Reset minute for each hour
+
+  # Loop through minutes from 1 to 59
+  while [ "$minute" -lt 60 ]; do
+    # Display the current time in HH:MM format
+    echo "Time: $hour:$minute"
+    minute=$((minute + 1))  # Increment minute
+  done
+
+  hour=$((hour + 1))  # Increment hour
+done
