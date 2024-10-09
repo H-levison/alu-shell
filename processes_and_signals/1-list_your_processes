@@ -2,4 +2,4 @@
 # A Bash script that displays a list of currently running processes.
 
 # Display currently running processes in user-oriented format with hierarchy
-ps -ef --forest
+ps -auxf
