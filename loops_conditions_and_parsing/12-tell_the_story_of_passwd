@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
-# Tells a story of /etc/passwd by displaying the content
+# Tells a story of /etc/passwd by displaying the content.
 
 # Open /etc/passwd file and read line by line
 while IFS=: read -r username password user_id group_id info home_directory shell; do
-  # Display the story for each user
+  # Display the first part of the story for each user
   echo "The user $username is part of the $group_id gang, lives in $home_directory and rides $shell."
+
+  # Display the second part with a space afterwards
   echo "User $user_id's place is protected by the passcode $password, more info about the user here: $info."
+
+  # Add a blank line for separation between users
   echo
 done < /etc/passwd
