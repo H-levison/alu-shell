@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# displays visitors ip along with the HTTP status
 # Path to the Apache log file
 log_file="/var/log/apache2/access.log"  # Adjust the path as necessary
 
